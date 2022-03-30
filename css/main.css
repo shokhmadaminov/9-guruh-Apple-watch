@@ -20,6 +20,7 @@
 :root {
     --text-color: #333;
     --brand-color: #ea625c;
+    --bg-color: #fff;
 }
 
 /* GLOBAL STYLES */
@@ -42,7 +43,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--bg-color);
     font-family: "Roboto", 'Arial', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -61,5 +62,71 @@ img {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* SITE HEADER STYLES */
+.site-header {
+    padding: 30px 0;
+}
+.site-header-container {
+    display: flex;
+    align-items: center;
+}
+.site-header-logo-link {
+    text-decoration: none;
+    display: flex;
+    margin-right: auto;
+}
+.site-header-logo-link:hover {
+    opacity: 0.8;
+}
+.site-header-logo-link:active {
+    opacity: 0.6;
+}
+.site-header-logo-img {
+    width: 35px;
+    height: 41.5px;
+    object-fit: contain;
+    display: block;
+}
+.sitenav {
+    margin-right: 40px;
+}
+.sitenav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sitenav-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.sitenav-item-link {
+    line-height: normal;
+    color: var(--text-color);
+    text-decoration: none;
+    padding-bottom: 3px;
+    position: relative;
+    display: flex;
+}
+.sitenav-item-link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+.sitenav-item-link:hover::before {
+    background-color: var(--text-color);
+    width: 105%;
+}
+.site-header-form-input {
+    width: 153px;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
 }
 
