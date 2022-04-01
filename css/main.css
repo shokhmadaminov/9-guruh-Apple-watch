@@ -245,11 +245,11 @@ img {
     display: flex;
     justify-content: flex-end;
 }
-.all-text-wrapper h2,
-.all-text-wrapper p {
+.site-bottom-container h2,
+.site-bottom-container p {
     color: #fff;
 }
-.all-text-wrapper p {
+.site-bottom-container p {
     border-left-color: #fff;
 }
 
