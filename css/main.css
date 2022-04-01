@@ -234,6 +234,25 @@ img {
     width: 50px;
 }
 
+/* SITE BOTTOM SECTION STYLES */
+.site-bottom {
+    padding: 240px 0px;
+    background-image: url("../images/site-bottom-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.site-bottom-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.all-text-wrapper h2,
+.all-text-wrapper p {
+    color: #fff;
+}
+.all-text-wrapper p {
+    border-left-color: #fff;
+}
+
 
 
 
@@ -255,6 +274,9 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     .hero {
         background-image: url("../images/intro-watch-bg@2x.jpg");
+    }
+    .site-bottom {
+        background-image: url("../images/site-bottom-bg@2x.jpg");
     }
 }
 
