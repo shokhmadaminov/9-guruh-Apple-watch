@@ -21,6 +21,8 @@
     --text-color: #333;
     --brand-color: #ea625c;
     --bg-color: #fff;
+    --black-color: #000;
+    --text-wrapper-text-color: #777;
 }
 
 /* GLOBAL STYLES */
@@ -63,7 +65,18 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* BUTTON STYLES */
+.site-btn {
+    font-weight: 700;   
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 38.5px;
+    background-color: var(--brand-color);
+    display: inline-block;
+}
 
 /* SITE HEADER STYLES */
 .site-header {
@@ -128,5 +141,61 @@ img {
     border: none;
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
+}
+
+
+/* SITE MAIN SECTION STYLES */
+.main {
+    flex-grow: 1;
+}
+
+/* SITE HERO SECTION STYLES */
+.hero {
+    background-image: url("../images/intro-watch-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: calc(50% + 533.5px) bottom;
+    padding: 140px 0 185px 0;
+}
+.all-text-wrapper {
+    width: 490px;
+}
+.all-text-wrapper-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.all-text-wrapper-text {
+    font-size: 16px;
+    color: var(--text-wrapper-text-color);
+    margin-bottom: 30px;
+    padding-left: 37px;
+    border-left: 3px solid #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .hero {
+        background-image: url("../images/intro-watch-bg@2x.jpg");
+    }
 }
 
