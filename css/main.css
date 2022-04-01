@@ -20,6 +20,7 @@
 :root {
     --text-color: #333;
     --brand-color: #ea625c;
+    --brand-hover-color: #c9514c;
     --bg-color: #fff;
     --black-color: #000;
     --text-wrapper-text-color: #777;
@@ -76,6 +77,9 @@ img {
     padding: 12px 38.5px;
     background-color: var(--brand-color);
     display: inline-block;
+}
+.site-btn:hover {
+    background-color: var(--brand-hover-color);
 }
 
 /* SITE HEADER STYLES */
